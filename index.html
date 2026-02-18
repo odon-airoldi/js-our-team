@@ -19,17 +19,37 @@
     </header>
 
     <main>
-        <section>
-            <div class="container py-5">
+        <div class="container">
+            <section class="py-5">
                 <div class="text-center">
                     <h2 class="mb-5">Our team</h2>
                 </div>
                 <div class="row g-4">
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="py-5">
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputRole" class="form-label">Role</label>
+                        <input type="text" class="form-control" id="inputRole" placeholder="Role">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Add member</button>
+                    </div>
+                </form>
+            </section>
+        </div>
     </main>
-    <footer>
+    <footer class="p-3">
+        <small class="text-body-secondary">Company #153</small>
     </footer>
     
 </body>

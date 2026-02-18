@@ -59,12 +59,12 @@ function handleTeamMembers(team) {
         const {name, role, email, img} = member;
 
         const col_el =` <div class="col-md-6">
-                          <div class="card mb-3 border-0 bg-body-tertiary">
+                          <div class="card border-0 bg-body-tertiary">
                             <div class="row g-0">
-                              <div class="col-md-4">
+                              <div class="col-4">
                                 <img src="./assets/${img}" class="img-fluid" alt="${name}">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-8">
                                 <div class="card-body">
                                   <h5 class="card-title">${name}</h5>
                                   <p class="card-text">${role}</p>

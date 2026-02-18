@@ -51,12 +51,34 @@ const teamMembers = [
 ];
 
 
-for(let i = 0; i < teamMembers.length; i++) {
+function handleTeamMembers(team) {
 
-  const member = teamMembers[i];
+    for(let i = 0; i < team.length; i++) {
 
-  const {name, role, email, img} = member;
+        const member = team[i];
+        const {name, role, email, img} = member;
 
-  console.log(name, role, email, img)
+        const col_el =` <div class="col-md-6">
+                          <div class="card mb-3 border-0 bg-body-tertiary">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="./assets/${img}" class="img-fluid" alt="${name}">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">${name}</h5>
+                                  <p class="card-text">${role}</p>
+                                  <p class="card-text"><small class="text-body-secondary">${email}</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>`
+
+        row_el.innerHTML += col_el;
+    }
+
 
 }
+
+handleTeamMembers(teamMembers)

@@ -9,7 +9,11 @@ Aggiungere un form di aggiunta membri che permetta di visualizzare il nuovo memb
 */
 
 const row_el = document.querySelector('.row');
-
+const form_el = document.getElementById('form_member');
+const input_name_el = document.getElementById('inputName');
+const input_role_el = document.getElementById('inputRole');
+const input_email_el = document.getElementById('inputEmail');
+const input_image_el = document.getElementById('inputImage');
 
 const teamMembers = [
   {
@@ -49,7 +53,6 @@ const teamMembers = [
     img: "./assets/img/female3.png"
   }
 ];
-
 
 function renderCard(member) {
 
@@ -95,13 +98,6 @@ function renderTeam(team, output_el) {
 
 renderTeam(teamMembers, row_el);
 
-
-
-const form_el = document.getElementById('form_member');
-const input_name_el = document.getElementById('inputName');
-const input_role_el = document.getElementById('inputRole');
-const input_email_el = document.getElementById('inputEmail');
-const input_image_el = document.getElementById('inputImage');
 
 form_el.addEventListener('submit', function(e) {
 
